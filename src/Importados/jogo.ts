@@ -106,7 +106,7 @@ export async function verificaPontoMeta(): Promise<void> {
   if (pontos >= meta) {
     if(await transicaoDeRodadaNormal(rodada)){
       rodada += 1;
-      meta *= 2;
+      meta += 200;
       pontos = 0;
       nmrDescartes = 3;
       nmrJogadas = 4;
