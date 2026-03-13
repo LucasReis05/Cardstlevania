@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/ufjf-dcc206-2025-1-a-trb-canastra/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Cardstlevania</title>
+    <style>
+      body {
+        background: url('/ufjf-dcc206-2025-1-a-trb-canastra/assets/tutorial-D6YFhUfI.jpg') no-repeat center center fixed;
+        background-size: cover;
+        margin: 0;
+       height: 100vh;
+      }
+      body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      backdrop-filter: blur(1px);
+      background-color: rgba(0, 0, 0, 0.2);
+      z-index: -1;
+      }
+      h1 {
+        text-align: center;
+        margin-top: 30px;
+        font-size: 5em;
+      }
+      p {
+        text-align: center;
+        font-size: 2vw;
+        text-indent: 1vw;
+        margin-left: 2vw;
+        margin-right: 2vw;
+      }
+    </style>
+    <script>
+      function imageAppear(id) {
+        document.getElementById(id).style.visibility = "visible";
+      }
+      function imageDisappear(id) {
+        document.getElementById(id).style.visibility = "hidden";
+      }
+    </script>
+    <script type="module" crossorigin src="/ufjf-dcc206-2025-1-a-trb-canastra/assets/main-Mafp7uGL.js"></script>
+    <link rel="stylesheet" crossorigin href="/ufjf-dcc206-2025-1-a-trb-canastra/assets/main-BTO6xSin.css">
+  </head>
+  <body>
+    <h1>TUTORIAL</h1>
+    <p>
+      O objetivo do jogo e usar as cartas do baralho para formar combinacoes de poquer e atingir a pontuacao necessaria em cada rodada. O baralho tem 4 naipes: copas &hearts;, espadas &spades;, ouros &diams; e paus &clubs;, com cartas que vao do 2 ao 10, alem de J, Q, K e A.
+      <br><br>
+      Voce pode ter no maximo 8 cartas na mao e escolher ate 5 delas para jogar ou ate 5 para descartar. As cartas jogadas podem formar combinacoes como: Carta Alta, Par, Dois Pares, Trinca, Sequencia. Todas as combinacoes estao na tabela abaixo, com suas descricoes. 
+    </p>
+    <table>
+     <tr>
+       <th>Combinacao</th>
+       <th>Descricao</th>
+     </tr>
+     <tr>
+       <td tabindex="0"
+      onmouseover="imageAppear('img-royalflush')"
+      onmouseout="imageDisappear('img-royalflush')"
+      onfocus="imageAppear('img-royalflush')"
+      onblur="imageDisappear('img-royalflush')">
+      Royal Flush
+      <img id="img-royalflush" src="/ufjf-dcc206-2025-1-a-trb-canastra/assets/Royal%20Flush-COXRp9n1.png" alt="Royal Flush" />
+       </td>
+       <td>Sequencia do mesmo naipe do 10 ao As, a mao mais forte.</td>
+     </tr>
+     <tr>
+       <td tabindex="0"
+      onmouseover="imageAppear('img-straightflush')"
+      onmouseout="imageDisappear('img-straightflush')"
+      onfocus="imageAppear('img-straightflush')"
+      onblur="imageDisappear('img-straightflush')">
+      Straight Flush
+      <img id="img-straightflush" src="/ufjf-dcc206-2025-1-a-trb-canastra/assets/Straight%20Flush-a-i0UAF7.png" alt="Straight Flush" />
+       </td>
+       <td>Sequencia do mesmo naipe.</td>
+     </tr>
+     <tr>
+       <td tabindex="0"
+      onmouseover="imageAppear('img-quadra')"
+      onmouseout="imageDisappear('img-quadra')"
+      onfocus="imageAppear('img-quadra')"
+      onblur="imageDisappear('img-quadra')">
+      Quadra
+      <img id="img-quadra" src="/ufjf-dcc206-2025-1-a-trb-canastra/assets/Quadra-BX5z24pZ.png" alt="Quadra" />
+       </td>
+       <td>4 cartas do mesmo valor.</td>
+     </tr>
+     <tr>
+       <td tabindex="0"
+      onmouseover="imageAppear('img-fullhouse')"
+      onmouseout="imageDisappear('img-fullhouse')"
+      onfocus="imageAppear('img-fullhouse')"
+      onblur="imageDisappear('img-fullhouse')">
+      Full House
+      <img id="img-fullhouse" src="/ufjf-dcc206-2025-1-a-trb-canastra/assets/Full%20House-Cf1ZoqcT.png" alt="Full House" />
+       </td>
+       <td>3 cartas do mesmo valor + 2 de outro valor.</td>
+     </tr>
+     <tr>
+       <td tabindex="0"
+      onmouseover="imageAppear('img-flush')"
+      onmouseout="imageDisappear('img-flush')"
+      onfocus="imageAppear('img-flush')"
+      onblur="imageDisappear('img-flush')">
+      Flush
+      <img id="img-flush" src="/ufjf-dcc206-2025-1-a-trb-canastra/assets/Flush-DSOseQUz.png" alt="Flush" />
+       </td>
+       <td>5 cartas do mesmo naipe.</td>
+     </tr>
+     <tr>
+       <td tabindex="0"
+      onmouseover="imageAppear('img-sequencia')"
+      onmouseout="imageDisappear('img-sequencia')"
+      onfocus="imageAppear('img-sequencia')"
+      onblur="imageDisappear('img-sequencia')">
+      Sequencia
+      <img id="img-sequencia" src="/ufjf-dcc206-2025-1-a-trb-canastra/assets/Sequencia-DewFzUAo.png" alt="Sequencia" />
+       </td>
+       <td>Cartas em ordem numerica, independente do naipe.</td>
+     </tr>
+     <tr>
+       <td tabindex="0"
+      onmouseover="imageAppear('img-trinca')"
+      onmouseout="imageDisappear('img-trinca')"
+      onfocus="imageAppear('img-trinca')"
+      onblur="imageDisappear('img-trinca')">
+      Trinca
+      <img id="img-trinca" src="/ufjf-dcc206-2025-1-a-trb-canastra/assets/Trinca-B4NyxdHJ.png" alt="Trinca" />
+       </td>
+       <td>3 cartas do mesmo valor.</td>
+     </tr>
+     <tr>
+       <td tabindex="0"
+      onmouseover="imageAppear('img-doispares')"
+      onmouseout="imageDisappear('img-doispares')"
+      onfocus="imageAppear('img-doispares')"
+      onblur="imageDisappear('img-doispares')">
+      Dois Pares
+      <img id="img-doispares" src="/ufjf-dcc206-2025-1-a-trb-canastra/assets/Dois%20Pares-D8wCLvQ3.png" alt="Dois Pares" />
+       </td>
+       <td>2 pares diferentes de cartas.</td>
+     </tr>
+     <tr>
+       <td tabindex="0"
+      onmouseover="imageAppear('img-par')"
+      onmouseout="imageDisappear('img-par')"
+      onfocus="imageAppear('img-par')"
+      onblur="imageDisappear('img-par')">
+      Par
+      <img id="img-par" src="/ufjf-dcc206-2025-1-a-trb-canastra/assets/Par-CSBvwdOR.png" alt="Par" />
+       </td>
+       <td>2 cartas do mesmo valor.</td>
+     </tr>
+     <tr>
+       <td tabindex="0"
+      onmouseover="imageAppear('img-cartaalta')"
+      onmouseout="imageDisappear('img-cartaalta')"
+      onfocus="imageAppear('img-cartaalta')"
+      onblur="imageDisappear('img-cartaalta')">
+      Carta Alta
+      <img id="img-cartaalta" src="/ufjf-dcc206-2025-1-a-trb-canastra/assets/Carta%20Alta-C__YQ-yH.png" alt="Carta Alta" />
+       </td>
+       <td>Somente a carta mais alta conta.</td>
+     </tr>
+      </table>
+    <p>
+      Apenas a maior combinacao formada pontua, e ela e calculada somando o valor das cartas (figuras valem 10 pontos, ases valem 15) e multiplicando pela raridade da mao. Voce pode jogar no maximo 4 maos e descartar no maximo 3 vezes por rodada.
+      <br><br>
+      Para vencer a rodada, e preciso atingir a pontuacao do desafio, que comeca em 100 pontos. A cada nova rodada, a pontuacao necessaria dobra e o valor das maos aumenta. Se, apos todas as maos disponiveis, voce nao atingir a pontuacao necessaria, sera derrotado.
+    </p>
+   
+    <div class="caixabotoes">
+    <a href="index.html" class="botao">MENU</a>
+    </div>
+  </body>
+</html>
+
