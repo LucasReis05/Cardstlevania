@@ -34,7 +34,7 @@ perdeu a rodada
   font-size: 2vw;
 }
 #botaoModal {
-  background: url("/src/recursos/imagens/botao3preto.png") no-repeat center center;
+  background: url("../recursos/imagens/botao3preto.png") no-repeat center center;
   color: rgb(255, 255, 255);
   background-size: 100% 100%;
   width: 310px;

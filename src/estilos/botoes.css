@@ -22,7 +22,7 @@ button, input[type="button"],a
   display: inline-block;
   width: min(300px, 28vw);
   height: min(150px, 24vh);
-  background: url(/src/recursos/imagens/botao.png) no-repeat center;
+  background: url('../recursos/imagens/botao.png') no-repeat center;
   background-size: 96% 71%;
   color: white;
   cursor: var(--cursor-click);
@@ -51,12 +51,12 @@ button, input[type="button"],a
 
 
 .botoes-partida:first-child {
-  background: url('/src/recursos/imagens/botao3preto.png') no-repeat center;
+  background: url('../recursos/imagens/botao3preto.png') no-repeat center;
   background-size: 100% 8vh;
 }
 
 .botoes-partida:nth-child(2) {
-  background: url('/src/recursos/imagens/botao4vermelho.png') no-repeat center;
+  background: url('../recursos/imagens/botao4vermelho.png') no-repeat center;
   background-size: 100% 8vh;
 }
 
@@ -70,7 +70,7 @@ button, input[type="button"],a
     align-items: center;
     width: 20vw;
     height: 14vh;
-    background: url(/src/recursos/imagens/botao2.png) no-repeat center;
+  background: url('../recursos/imagens/botao2.png') no-repeat center;
     background-size: 100% 100%;
     color: white;
     text-decoration: none;

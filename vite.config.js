@@ -1,10 +1,12 @@
 import { defineConfig } from 'vite'
 import { resolve } from 'path'
 
-export default defineConfig({
-  // O caminho base da sua aplicação para o GitHub Pages
-  base: `/ufjf-dcc206-2025-1-a-trb-canastra/`,
-  plugins: [], // Se você tiver plugins, mantenha-os aqui
+const repoName = 'Cardstlevania'
+
+export default defineConfig(({ command }) => ({
+  // Em desenvolvimento usa raiz local; no build usa a subpasta do repositório no GitHub Pages.
+  base: command === 'build' ? `/${repoName}/` : '/',
+  plugins: [],
   build: {
     rollupOptions: {
       input: {
@@ -14,4 +16,4 @@ export default defineConfig({
       }
     }
   }
-})
+}))
