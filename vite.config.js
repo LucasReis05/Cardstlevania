@@ -1,11 +1,9 @@
 import { defineConfig } from 'vite'
 import { resolve } from 'path'
 
-const repoName = 'Cardstlevania'
-
 export default defineConfig(({ command }) => ({
   // Em desenvolvimento usa raiz local; no build usa a subpasta do repositório no GitHub Pages.
-  base: command === 'build' ? `/${repoName}/` : '/',
+  base: `/Cardstlevania/`,
   plugins: [],
   build: {
     rollupOptions: {
